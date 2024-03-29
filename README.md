@@ -1,21 +1,15 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Streamlit ingesta de documentos y extraccion de metadatos
 ```
-⬆️ (Replace above with your app's name)
-```
+⬆️ Sreanlit, langchain, openai, pydantic, chroma
 
-Description of the app ...
+Esta aplicacion powered bny Papytum, esta pensada ara la ingesta de documentos y extraccion de documentos a una clase dinamica de Pydantic
 
-## Demo App
+## ingesta
+Via llamaparser se realizara la ingesta del docuemnto pdf creando un mk.
+Se spliteara y se crearan los embeddings via openai creando el vectorengine con chrome
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ml-model-builder-template.streamlit.app/)
+## Creacion de Metadatos para su extraccion
+Para esta funciona ademas se definiran via csv los metadatos y un texto para definir dicho metadato.
 
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+## ChatBot
+Creacion del qa_chain con el prompt template, el vectorengine y su llm (REtrieval)
